@@ -15,6 +15,19 @@ To write a Python program that filters out and returns all elements from a list 
 
 ## 🧾 Program
 Add code here
+import re
+
+words = ["apple", "banana", "grape", "kiwi", "mango", "pear", "plum"]
+
+filtered = [w for w in words if not re.search("e", w)]
+
+print("Original list:", words)
+print("Filtered list (no 'e'):", filtered)
+
 ## Output
+Original list: ['apple', 'banana', 'grape', 'kiwi', 'mango', 'pear', 'plum']
+Filtered list (no 'e'): ['banana', 'kiwi', 'mango', 'plum']
+
 
 ## Result
+Hence the output is verified
